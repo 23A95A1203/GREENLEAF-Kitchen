@@ -1,0 +1,1481 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.aintr1{
+    width: 100%;
+    height: 100svh;
+    background-image: url("../images/intr1.jpeg");
+    background-size: 100% 210%;
+    position: relative;
+}
+.aheader{
+    width: 100%;
+    position: fixed;
+    height: 14%;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(2px);
+    z-index: 999;
+}
+.alogo{
+    position: absolute;
+    width: 100px;
+    height: 90px;
+    background-image: url("../images/GFK_Logo-removebg-preview.png");
+    background-size: 100% 100%;
+    left: 10px;
+    animation-name: aalogo;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+    overflow: hidden;
+}
+@keyframes aalogo {
+    0%{
+        width: 600px;
+        height: 600px;
+        left: 100%;
+        top: 600%;
+    }
+    100%{
+        width: 100px;
+        height: 90px;
+        left: 10px;
+        top: 0;
+    }
+}
+.atext{
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    font-size: 35px;
+    color: white;
+    left: 8%;
+    font-weight: 900;
+    font-family: cursive;
+    letter-spacing: 3px;
+    animation-name: aatext;
+    animation-duration: 4s;
+}
+@keyframes aatext {
+    0%{
+        letter-spacing: 40px;
+        color: #97BF46;
+    }
+    20%{
+        color: #6DA119;
+    }
+    40%{
+        color: #479A77;
+    }
+    60%{
+        color: #49600b;
+    }
+    80%{
+        color: #479A77;
+    }
+    100%{
+        letter-spacing: 3px;
+        color: white;
+    }
+}
+.adetails{
+    width: 30%;
+    height: 100%;
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    color: white;
+}
+.abuttons{
+    width: 20%;
+    height: 40%;
+    border-radius: 10px;
+    /* border: 1px solid white; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-family: cursive;
+}
+.amore{
+    position: absolute;
+    right: 3%;
+    display: none;
+    cursor: pointer;
+}
+#signin{
+    border-radius: 50%;
+    width: 10%;
+    height: 45%;
+    /* color: black; */
+}
+.abuttons:hover{
+    transform: scale(1.2);
+    background-color: #479A77;
+    color: black;
+    border: none;
+}
+a:hover{
+    color: black;
+}
+.a1body{
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    bottom: 0;
+    display: flex;
+}
+.hf{
+    position: absolute;
+    width: 25%;
+    height: 45%;
+    background-image: url("../images/hf.png");
+    background-size: 100% 100%;
+    bottom: 5%;
+    left: 37%;
+    animation-name: ahf;
+    animation-duration: 2s;
+    /* transform: rotateY(-60deg); */
+}
+@keyframes ahf {
+    0%{
+        width: 0;
+        height: 0;
+    }
+    100%{
+        width: 25%;
+        height: 45%;
+    }
+}
+.acontainer {
+    position: absolute;
+    border-top-right-radius:  15px;
+    border-bottom-right-radius:15px ;
+    /* border-radius: 15px; */
+    padding: 20px;
+    width: 17.5%;
+    height: 71.8%;
+    text-align: center;
+    background-blend-mode: multiply;
+    background-size: 100% 100%;
+    margin-top: 70px;
+    color: black;
+    line-height: 1.1;
+    left: 15%;
+    bottom: 3.5%;
+    background-image: url("../images/bookimg.png");
+    background-size: 100% 100%;
+    padding-top: 4%;
+    /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+    letter-spacing: 1px;
+    animation-name: amcontain;
+    animation-duration: 2s;
+    /* font-size: 5px; */
+    /* background: linear-gradient(to bottom right,black,white,black); */
+    /* border: 1px solid black; */
+}
+@keyframes amcontain {
+    0%{
+        left: -1000px;
+    }
+    100%{
+        left: 15%;
+    }
+}
+#actitle{
+    letter-spacing: 3px;
+    font-weight: 700;
+    font-family: cursive;
+    position: absolute;
+    left: 18%;
+    color: #479A77;
+}
+#ingredientInput{
+    border-radius: 15px;
+    width: 85%;
+    position: absolute;
+    left: 3%;
+    top: 20%;
+    outline: 0;
+    border: 2px solid #479A77;
+    color: black;
+    text-align: center;
+}
+#acbut{
+    position: absolute;
+    top: 32%;
+    left: 25%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #479A77;
+}
+input {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+#recipeOutput {
+    margin-top: 130px;
+    text-align: left;
+}
+#agetdetails{
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #479A77;
+    font-size: 13px;
+    bottom: 2%;
+    left: 30%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 5px;
+    display: none;
+}
+.amcontainer{
+    width: 35%;
+    height: 79%;
+    background-image: url("../images/cook.png");
+    background-size: 100% 100%;
+    position: absolute;
+    right: 65%;
+    bottom: 15%;
+    border-radius: 35px;
+    top: 18%;
+    overflow: hidden;
+    animation-name: amcont;
+    animation-duration: 2.2s;
+    /* box-shadow: rgb(10, 14, 19) 10px 20px 30px -10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset; */
+}
+@keyframes amcont {
+    0%{
+        right: -1000px;
+        width: 0px;
+        height: 0px;
+    }
+    95%{
+        width: 0px;
+        height: 0px;
+    }
+    100%{
+        right: 65%;
+    }
+}
+@media screen and (max-width:1441px) {
+    .amcontainer{
+        left: 0%;
+    }
+    .acontainer{
+        left: 15%;
+        font-size: 16px;
+        width: 20%;
+        padding-top: 70px;
+        letter-spacing: 0px;
+    }
+    #actitle{
+        font-size: 20px;
+        left:25% ;
+        top: 15%;
+    }
+    #acbut{
+        left: 25%;
+        top: 30.5%;
+    }
+    #agetdetails{
+        left: 35%;
+    }
+}
+@media screen and (max-width:1212px) {
+    .amcontainer{
+        left: 3%;
+    }
+    .acontainer{
+        left: 18%;
+        font-size: 17px;
+        width: 25%;
+        padding-top: 70px;
+    }
+    #actitle{
+        font-size: 20px;
+        left:25% ;
+        top: 15%;
+    }
+    #acbut{
+        left: 28%;
+    }
+}
+@media screen and (max-width:1025px) {
+    .amcontainer{
+        left: 5%;
+    }
+    .acontainer{
+        left: 20%;
+        width: 19%;
+        /* font-family: cursive; */
+        font-size: 10px;
+    }
+    #actitle{
+        font-size: 20px;
+        left:25% ;
+        top: 15%;
+    }
+    #acbut{
+        left: 20%;
+    }
+}
+@media screen and (max-width:1050px) {
+    .amcontainer{
+        left: 0%;
+    }
+    .acontainer{
+        left: 15%;
+        font-size: 14px;
+        padding-top: 40px;
+        top: 13%;
+    }
+    #actitle{
+        font-size: 20px;
+        left:25% ;
+        top: 15%;
+    }
+    #acbut{
+        left: 28%;
+        height: 8%;
+        font-size: 10px;
+        top: 33%;
+    }
+    #ingredientInput{
+        width: 80%;
+    }
+}
+@media screen and (max-width:887px) {
+    .amcontainer{
+        left: 5%;
+    }
+    .acontainer{
+        left: 20%;
+        font-size: 15px;
+        width: 30%;
+    }
+    #actitle{
+        font-size: 20px;
+        left:25% ;
+        top: 15%;
+    }
+    #acbut{
+        left: 28%;
+        height: 8%;
+        font-size: 12px;
+    }
+    #ingredientInput{
+        width: 85%;
+    }
+}
+@media screen and (max-width:812px) {
+    .amcontainer{
+        left: 5%;
+    }
+    .acontainer{
+        left: 20%;
+        font-size: 15px;
+        width: 30%;
+        top: 15%;
+    }
+    #actitle{
+        font-size: 20px;
+        left:25% ;
+        top: 15%;
+    }
+    #acbut{
+        left: 28%;
+        height: 8%;
+        font-size: 12px;
+    }
+    #ingredientInput{
+        width: 85%;
+    }
+}
+@media screen and (max-width:769px) {
+    .aintr1{
+        background-image: url("../images/top-view-merry-christmas-black-background-decorated-with-glitter-branches-with-copy-space-winter-new-year-holiday-card-decoration-festive-cheerful-concept-flat-lay_150893-911.jpg");
+        background-size: 200% 100%;
+    }
+    .amcontainer{
+        left: 14%;
+        width: 50%;
+        top: 3%;
+        border-radius: 10px;
+    }
+    .acontainer{
+        left: 35%;
+        font-size: 16px;
+        width: 45%;
+        padding-top: 80px;
+        top: 0%;
+        border-radius: 10px;
+    }
+    #actitle{
+        font-size: 20px;
+        left:25% ;
+        top: 15%;
+    }
+    #acbut{
+        left: 28%;
+        height: 8%;
+        font-size: 13px;
+    }
+    #ingredientInput{
+        width: 85%;
+    }
+    #agetdetails{
+        left: 35%;
+    }
+    .hf{
+        display: none;
+    }
+}
+@media screen and (max-width:633px) {
+    .amcontainer{
+        left: 0%;
+        width: 70%;
+    }
+    .acontainer{
+        left: 30%;
+        font-size: 14px;
+        width: 60%;
+        padding: 10px;
+    }
+    #actitle{
+        font-size: 30px;
+        left:25% ;
+        top: 13%;
+    }
+    #acbut{
+        left: 48%;
+        height: fit-content;
+        font-size: 12px;
+        width: fit-content;
+        top: 23.5%;
+    }
+    #ingredientInput{
+        width: 35%;
+    }
+}
+@media screen and (max-width:492px) {
+    .amcontainer{
+        left: 4%;
+        width: 70%;
+    }
+    .acontainer{
+        left: 34%;
+        font-size: 13px;
+        width: 60%;
+    }
+    #actitle{
+        font-size: 30px;
+        left:20% ;
+        top: 13%;
+    }
+    #acbut{
+        left: 48%;
+        height:10%;
+        font-size: 12px;
+        width: fit-content;
+        top: 23%;
+        padding: 0;
+    }
+    #ingredientInput{
+        width: 30%;
+    }
+}
+@media screen and (max-width:426px) {
+    .amcontainer{
+        left: 4%;
+        width: 70%;
+    }
+    .acontainer{
+        left: 34%;
+        font-size: 13px;
+        width: 60%;
+        top: 2%;
+    }
+    #actitle{
+        font-size: 30px;
+        left:20% ;
+        top: 13%;
+    }
+    #acbut{
+        left: 48%;
+        height:10%;
+        font-size: 12px;
+        width: fit-content;
+        top: 23%;
+        padding: 0;
+    }
+    #ingredientInput{
+        width: 30%;
+    }
+}
+@media screen and (max-width:388px) {
+    .amcontainer{
+        left: 0%;
+        width: 70%;
+    }
+    .acontainer{
+        left: 30%;
+        font-size: 12px;
+        width: 65%;
+    }
+    #actitle{
+        font-size: 20px;
+        left:20% ;
+        top: 13%;
+    }
+    #acbut{
+        left: 48%;
+        height:10%;
+        font-size: 12px;
+        width: fit-content;
+        top: 23%;
+        padding: 0;
+    }
+    #ingredientInput{
+        width: 30%;
+    }
+}
+@media screen and (max-width:321px) {
+    .amcontainer{
+        left: 0%;
+        width: 70%;
+    }
+    .acontainer{
+        left: 30%;
+        font-size: 12px;
+        width: 65%;
+    }
+    #actitle{
+        font-size: 20px;
+        left:20% ;
+        top: 13%;
+    }
+    #acbut{
+        left: 48%;
+        height:10%;
+        font-size: 12px;
+        width: fit-content;
+        top: 23%;
+        padding: 0;
+    }
+    #ingredientInput{
+        width: 30%;
+    }
+}
+
+button {
+    padding: 10px 20px;
+    background-color:#6DA119;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.amoreoptions{
+    position: fixed;
+    width: 20%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    right: 0;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    gap: 40px;
+    z-index: 999;
+    animation-name: anime;
+    animation-duration: 2s;
+    display: none;
+}
+.aremove{
+    font-size: 50px;
+    width: 60px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid white;
+    border-radius: 50%;
+    padding-bottom: 10px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.amhome{
+    width: 200px;
+    height: fit-content;
+    border-bottom: 3px solid white;
+    text-align: center;
+    font-family: cursive;
+}
+@keyframes anime {
+    0%{
+        right: -1000px;
+    }
+    100%{
+        right: 0;
+    }
+}
+.amhome:hover{
+    color: #218838;
+    border-bottom: 3px solid #218838;
+}
+.anc:hover{
+    color: #218838;
+}
+.aremove:hover{
+    color: #218838;
+    border: 5px solid #218838;
+}
+
+button:hover {
+    background: #218838;
+}
+@media screen and (max-width:1246px) {
+    .atext{
+        left: 12%;
+    }
+}
+@media screen and (max-width:952px) {
+    .atext{
+        left: 15%;
+    }
+}
+@media screen and (max-width:941px) {
+    .adetails{
+        display: none;
+    }
+    .atext{
+        left: 30%;
+    }
+    .amore{
+        display: block;
+    }
+    .amoreoptions{
+        width: 30%;
+    }
+}
+@media screen and (max-width:596px) {
+    .atext{
+        left: 20%;
+    }
+}
+@media screen and (max-width:522px) {
+    .atext{
+        font-size: 20px;
+        left: 30%;
+    }
+}
+@media screen and (max-width:377px) {
+    .atext{
+        font-size: 15px;
+        left: 30%;
+    }
+}
+@media screen and (max-width:348px) {
+    .atext{
+        font-size: 12px;
+        left: 35%;
+    }
+}
+@media screen and (max-width:715px) {
+    .amoreoptions{
+        width: 40%;
+    }
+}
+@media screen and (max-width:533px) {
+    .amoreoptions{
+        width: 60%;
+    }
+}
+@media screen and (max-width:349px) {
+    .amoreoptions{
+        width: 80%;
+    }
+}
+.aintr2{
+    width: 100%;
+    height: 160svh;
+    position: relative;
+    background-image: url("");
+    background-size: 100% 100%;
+}
+.atitle{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    width: 35%;
+    font-size: 50px;
+    left: 32%;
+    top: 5%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    /* background-color: red; */
+}
+.acards{
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    /* background-color: red; */
+    bottom: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.adish1{
+    width: 350px;
+    height: 200px;
+    /* border-radius: 10px; */
+    margin: 20px;
+    transform:rotateY(0deg);
+    transition: all 1s;
+    transform-style: preserve-3d;
+    display: flex;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+.afrontpart,.abackpart{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* background-color: red; */
+    backface-visibility: hidden;
+}
+.afrontpart{
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+.abackpart{
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+.afrontpart{
+    background-image: url("https://veganinthefreezer.com/wp-content/uploads/2023/04/Vegan-Chickpea-Curry-Ready-10.jpg");
+    background-size: 100% 100%;
+    border: 3px solid #97BF46;
+}
+
+.acountry{
+    position: absolute;
+    width: 50px;
+    height: 30px;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2FzNowL5xtyLe4hajNtegzUtYhvrtfhnzkg&s");
+    background-size: 100% 100%;
+    border-radius: 10px;
+    left: 43%;
+    top: 3%;
+    opacity: 5;
+}
+.acountryname{
+    position: absolute;
+    top: 30%;
+    letter-spacing: 10px;
+    left: 37%;
+    font-family: cursive;
+    font-weight: 1500;
+    color: white;
+}
+.arating{
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    width: fit-content;
+    height: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 25px;
+    /* background-color: red; */
+}
+.aexplore{
+    position: absolute;
+    width: 80px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #479A77;
+    color: white;
+    top: 75%;
+    left: 40%;
+    font-size: 20px;
+    font-family: cursive;
+}
+.adish1:hover{
+    transform: rotateY(-180deg);
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+#a2,#a22{
+    background-image: url("https://www.justonecookbook.com/wp-content/uploads/2024/01/Daikon-and-Fried-Tofu-Miso-Soup-5755-I.jpg"),linear-gradient(to top left,rgb(24, 23, 23),white);
+}
+#a2flag{
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/b/bb/Japan_flag_icon.png?20200907120750");
+}
+#a3,#a33{
+    background-image: url("https://st5.depositphotos.com/7691758/65539/i/450/depositphotos_655398440-stock-photo-green-salad-apples-goat-cheese.jpg"),linear-gradient(to top left,rgb(24, 23, 23),white);
+}
+#a3flag{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROWEC24_JKDQGHcaiS3k0O5qRoJqlH1PMuFA&s");
+}
+.abackpart{
+    background-image: url("https://veganinthefreezer.com/wp-content/uploads/2023/04/Vegan-Chickpea-Curry-Ready-10.jpg") ,linear-gradient(to top left,rgb(24, 23, 23),white);;
+    background-size: 100% 100%;
+    background-blend-mode:multiply;
+    transform: rotateY(180deg);
+    color: black;
+    border: 1px solid black;
+}
+#a4,#a44{
+    background-image: url("https://koala.sh/api/image/v2-8ncek-8zzpc.jpg?width=1216&height=832&dream"),linear-gradient(to top left,rgb(24, 23, 23),white);
+}
+#a4flag{
+    background-image: url("https://cdn.countryflags.com/thumbs/mexico/flag-400.png");
+}
+#a5,#a55{
+    background-image: url("https://t3.ftcdn.net/jpg/08/60/82/36/360_F_860823645_q4t1nHrk2VrQNymZpvBARF1v7XTQDiWJ.jpg"),linear-gradient(to top left,rgb(24, 23, 23),white);
+}
+#a5flag{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRBExTn0QOmHuw8S1qxyfnG54Tg6Lmzqqinw&s");
+}
+#a6,#a66{
+    background-image: url("https://t3.ftcdn.net/jpg/06/34/33/76/360_F_634337684_CYJaz6FdpvY9nbzl7odjr8U6EzSCzYac.jpg"),linear-gradient(to top left,rgb(24, 23, 23),white);
+}
+#a6flag{
+    background-image: url("https://www.countryflags.com/wp-content/uploads/italy-flag-png-large.png");
+}
+#a7,#a77{
+    background-image: url("https://ichef.bbci.co.uk/food/ic/food_16x9_1600/recipes/steamed_whole_sea_bass_85778_16x9.jpg"),linear-gradient(to top left,rgb(24, 23, 23),white);
+}
+#a7flag{
+    background-image: url("https://t4.ftcdn.net/jpg/05/18/55/83/360_F_518558397_6hElKiMb3jK80XvWOx3V5D26T7nKoYR6.jpg");
+}
+#a8,#a88{
+    background-image: url("https://img.freepik.com/premium-photo/instant-pot-lentil-soup-recipe_198067-6990.jpg"),linear-gradient(to top left,rgb(24, 23, 23),white);
+}
+#a8flag{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn0_dAcZMyeY8i6bbbK3pxjuP6iKqM4gR-iQ&s");
+}
+#a9,#a99{
+    background-image: url("https://img.freepik.com/premium-photo/andalusian-gazpacho-red-tomato-cold-gazpacho-soup-glass-with-cucumber-onion-basil-chili-peppers-croutons_103326-2105.jpg"),linear-gradient(to top left,rgb(24, 23, 23),white);
+}
+#a9flag{
+    background-image: url("https://static.vecteezy.com/system/resources/previews/008/070/285/non_2x/spain-flag-icon-in-official-color-and-proportion-correctly-free-vector.jpg");
+}
+#a10,#a100{
+    background-image: url("https://t3.ftcdn.net/jpg/05/18/80/28/360_F_518802874_yrTVXxbTueKyTB2dDwWjkyZOSuKOB8M8.jpg"),linear-gradient(to top left,rgb(24, 23, 23),white);
+}
+#a10flag{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoXAZ0KX4AqTqkKhSO54rdKNYPS9v4wd8yZA&s");
+}
+#a11,#a111{
+    background-image: url("https://media.istockphoto.com/id/1249566648/photo/eating-kimchi-cabbage-and-rice-in-a-black-bowl-with-chopsticks-korean-food.jpg?s=612x612&w=0&k=20&c=lMGMO0cJO3_FOB_rz0sXT-1ZbjJNWFlZnVBirJ-2dK4="),linear-gradient(to top left,rgb(24, 23, 23),white);
+}
+#a11flag{
+    background-image: url("https://cdn.britannica.com/49/1949-050-39ED83BA/Flag-South-Korea.jpg");
+}
+#a12,#a122{
+    background-image: url("https://www.shutterstock.com/image-photo/feijoada-typical-brazilian-food-traditional-600nw-2316770535.jpg"),linear-gradient(to top left,rgb(24, 23, 23),white);
+}
+#a12flag{
+    background-image: url("https://cdn.britannica.com/47/6847-004-7D668BB0/Flag-Brazil.jpg");
+}
+@media (max-width: 768px) {
+    .adish1 {
+        width: 80%; /* Adjust width for smaller screens */
+        max-width: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .atitle {
+        font-size: 5vw; /* Adjust font size for smaller screens */
+    }
+
+    .acards {
+        height: 80%; /* Adjust height for smaller screens */
+    }
+
+    .adish1 {
+        width: 95%; /* Adjust width for smaller screens */
+    }
+
+    .arating, .aexplore {
+        font-size: 3vw; /* Adjust font size for smaller screens */
+    }
+}
+@media screen and (max-width:1246px) {
+    .atitle{
+        font-size: 40px;
+    }
+}
+@media screen and (max-width:1152px) {
+    .atitle{
+        font-size: 30px;
+    }
+}
+@media screen and (max-width:486px) {
+    .atitle{
+        font-size: 25px;
+    }
+}
+
+  
+  
+  
+  .slider {
+    display: flex;
+    flex-direction: row;
+    width: 98%;
+    height: 90px;
+    /* border: 1px solid black; */
+    padding: 15px;
+    gap: 25px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .slider .slide {
+    display: flex;
+    animation: scroll 20s linear infinite;
+    width: calc(100px * 14);
+  }
+  
+  .slider img {
+    max-width: 250px;
+    margin-top: 45px;
+    height: auto;
+  }
+  
+  #op {
+    position: absolute;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 90px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  
+  @keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-100px * 21));
+    }
+  }
+  
+  /* @media (max-width: 768px) {
+    .slider {
+        height: auto;
+        padding: 10px;
+        gap: 15px;
+    }
+  
+    .slider img {
+        max-width: 150px;
+        margin-top: 20px;
+    }
+  
+    #op {
+        font-size: 14px;
+    }
+  }
+  
+@media (max-width: 480px) {
+    .slider {
+        flex-direction: column;
+        align-items: center;
+        padding: 5px;
+        gap: 10px;
+    }
+  
+    .slider img {
+        max-width: 100px;
+        margin-top: 10px;
+    }
+  
+    #op {
+        font-size: 12px;
+  }
+} */
+.photos
+{
+    width: 100%;
+    height: 400px;
+    /* background-color: black; */
+    display: flex;
+    flex:wrap;
+    z-index: 0;
+    position: relative;
+}
+
+.first
+{
+    width: 25%;
+    height: 400px;
+    background-image: url("https://img.freepik.com/free-photo/pre-prepared-food-showcasing-ready-eat-delicious-meals-go_23-2151431678.jpg?t=st=1721880358~exp=1721883958~hmac=c43c864afd28d80f0dda5692982eef55560754c7ce7afebfdd13935ef1a7363a&w=996");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.second
+{
+    width: 25%;
+    height: 400px;
+    background-image: url("https://img.freepik.com/premium-photo/tasty-gelato-ice-cream-flavours-scoops-waffle-cones-cinematic-food-dessert-photography_1030265-9974.jpg?w=826");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.third
+{
+    width: 25%;
+    height: 400px;
+    background-image: url("https://img.freepik.com/premium-photo/glass-orange-juice-is-tablerealistic_931576-52353.jpg?uid=R156454776&ga=GA1.1.728528712.1695138479&semt=ais_user");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.fourth
+{
+    width: 25%;
+    height: 400px;
+    background-image: url("https://img.freepik.com/free-photo/close-up-delicious-asian-food_23-2150535868.jpg?t=st=1721880448~exp=1721884048~hmac=99be22c92eb4b5e96369448064b694b46b20353cbf131fce926e398731a561d7&w=996");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.fifth
+{
+    width: fit-content;
+    height: fit-content;
+    background-color: transparent;
+    border-radius: 10px;
+    position: absolute;
+    color:#303C10;
+    z-index: 1;
+    font-size: 50px;
+    font-family: brush script mt;
+    font-weight: bold;
+    top: 25%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    text-shadow: 4px 4px 2px rgb(0, 0, 0);     
+}
+footer {
+    color: #000000;
+    padding: 40px 0;
+    text-align: center;
+    background-image: url("../images/footer.jpg");
+    background-blend-mode: color-dodge;
+    background-size: 30% 110%;
+    font-size: 18px;
+    font-family: cursive;
+    height: fit-content;
+    color: black;
+    backdrop-filter: blur(20px);
+    position: absolute;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 50px;
+    padding : 0px;
+    /* background-color: red; */
+}
+.footer-section-links{
+text-decoration: none;
+padding: 20px;
+}
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+    margin: 20px 0;
+}
+
+.footer-section h2 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+.footer-section p,
+.footer-section ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 20px;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+    /* background-color: red; */
+}
+
+.footer-section ul li a:hover {
+    color: #000000;
+}
+
+.footer-section .social-links {
+    display: flex;
+    justify-content: center;
+    /* color: #000000; */
+}
+
+.footer-section .social-links a {
+    margin: 20px;
+    transition: transform 0.3s;
+}
+
+.footer-section .social-links a:hover {
+    transform: scale(1.1);
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 0.9em;
+}
+.social-links img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+/* @media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .photos{
+        width: 100%;
+        height: 400px;
+        background-image: url("./f1\,2\,3\,4.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .first
+    {
+        width: 100%;
+        height: 400px;
+        background-image: url("./F2.jpeg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .fifth
+    {
+        display: block;
+        text-align: center; 
+    }
+    .first
+    {
+        display: none;
+    }
+    .second
+    {
+        display: none;
+    }
+    .third
+    {
+        display: none;
+    }
+    .fourth
+    {
+        display: none;
+        }
+} */
+ul {
+    list-style: none;
+  }
+  
+  .example-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15%;
+    /* display: none; */
+  }
+  .example-2 .icon-content {
+    margin: 0 10px;
+    position: relative;
+  }
+  .example-2 .icon-content .tooltip {
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    padding: 6px 10px;
+    border-radius: 5px;
+    opacity: 0;
+    visibility: hidden;
+    font-size: 14px;
+    transition: all 0.3s ease;
+  }
+  .example-2 .icon-content:hover .tooltip {
+    opacity: 1;
+    visibility: visible;
+    top: -50px;
+  }
+  .example-2 .icon-content a {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    color: #4d4d4d;
+    background-color: #fff;
+    transition: all 0.3s ease-in-out;
+  }
+  .example-2 .icon-content a:hover {
+    box-shadow: 3px 2px 45px 0px rgb(0 0 0 / 12%);
+  }
+  .example-2 .icon-content a svg {
+    position: relative;
+    z-index: 1;
+    width: 30px;
+    height: 30px;
+  }
+  .example-2 .icon-content a:hover {
+    color: white;
+  }
+  .example-2 .icon-content a .filled {
+    position: absolute;
+    top: auto;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: #000;
+    transition: all 0.3s ease-in-out;
+  }
+  .example-2 .icon-content a:hover .filled {
+    height: 100%;
+  }
+  
+  .example-2 .icon-content a[data-social="linkedin"] .filled,
+  .example-2 .icon-content a[data-social="linkedin"] ~ .tooltip {
+    background-color: #0274b3;
+  }
+  
+  .example-2 .icon-content a[data-social="github"] .filled,
+  .example-2 .icon-content a[data-social="github"] ~ .tooltip {
+    background-color: #24262a;
+  }
+  .example-2 .icon-content a[data-social="instagram"] .filled,
+  .example-2 .icon-content a[data-social="instagram"] ~ .tooltip {
+    background: linear-gradient(
+      45deg,
+      #405de6,
+      #5b51db,
+      #b33ab4,
+      #c135b4,
+      #e1306c,
+      #fd1f1f
+    );
+  }
+  .example-2 .icon-content a[data-social="youtube"] .filled,
+  .example-2 .icon-content a[data-social="youtube"] ~ .tooltip {
+    background-color: #ff0000;
+  }
+  @media screen and (max-width:1025px) {
+    .slider{
+        /* display: none; */
+        margin-top: 600px;
+        width: 97%;
+    }
+    .example-2 .icon-content a{
+        width: 17px;
+        height: 25px;
+    }
+    .aheader{
+        width: 100%;
+    }
+    .footer-container{
+        width: 1000px;
+    }
+    footer{
+        background-size: 50% 100%;
+    }
+}
+@media screen and (max-width:769px) {
+    .slider{
+        /* display: none; */
+        margin-top: 2000px;
+        width: 95%;
+    }
+    .photos{
+        /* display: none; */
+        /* margin: 80px; */
+        justify-content: space-evenly;
+        height: 200px;
+    }
+    footer{
+        /* display: none; */
+        background-size: 50% 100%;
+        margin-top: 230px;
+    }
+    .fourth{
+        display: none;
+    }
+    .first,.second,.third{
+        width: 32%;
+    }
+    .footer-container{
+        margin-top: 80px;
+        font-size: 15px;
+        width: 750px;
+    }
+    .social-links{
+        font-size: 10px;
+        margin-bottom: 50px;
+    }
+    .social-links img{
+        width: 30px;
+        height: 30px;
+    }
+    .footer-section h2 {
+        font-size: 1.1em;
+    }
+    .acountryname{
+        left: 40%;
+        letter-spacing: 25px;
+    }
+    .arating{
+        left: 38%;
+    }
+    .example-2 .icon-content a{
+        width: 40px;
+        height: 40px;
+    }
+    .aheader{
+        width: 100%;
+    }
+}
+@media screen and (max-width:426px) {
+    .second,.third{
+        display: none;
+    }
+    .first{
+        display: none;
+    }
+    .photos{
+        height: fit-content;
+    }
+    footer{
+        background-size: 100% 100%;
+        margin-top:0px;
+    }
+    .footer-container{
+        margin-top: 150px;
+        font-size: 15px;
+        width: 420px;
+    }
+    .social-links{
+        margin-bottom: 100px;
+    }
+    .slider{
+        width: 90%;
+    }
+    .aheader{
+        width: 99%;
+    }
+    .acountryname{
+        left: 40%;
+        letter-spacing: 15px;
+    }
+    .arating{
+        left: 40%;
+        font-size: 20px;
+    }
+}
+@media screen and (max-width:376px){
+    footer{
+        background-size: 150% 110%;
+    }
+    .footer-container{
+        margin-top: 250px;
+        font-size: 18px;
+        width: 370px;
+    }
+    .acountryname{
+        left: 35%;
+        letter-spacing: 15px;
+    }
+    .arating{
+        left: 35%;
+        font-size: 20px;
+    }
+    .aheader{
+        width: 99%;
+    }
+}
+@media screen and (max-width:321px){
+    footer{
+        background-size: 180% 115%;
+        width: 100%;
+        margin-top: 2100px;
+    }
+    .footer-container{
+        margin-top: 370px;
+        font-size: 30px;
+        margin-left: 40px;
+    }
+    .aheader{
+        width: 99%;
+    }
+    .footer-container{
+        margin-top: 250px;
+        font-size: 15px;
+        width: 270px;
+    }
+    .example-2 .icon-content a{
+        width: 15px;
+        height: 15px;
+    }
+    .slider{
+        display: none;
+    }
+}

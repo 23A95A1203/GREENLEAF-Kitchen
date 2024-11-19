@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="main">
+        <div class="container" id="container">
+            <div class="form-container sign-up-container">
+                <form id="signupForm">
+                    <h1>Create Account</h1>
+                    <div class="social-container">
+                        <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                        <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <span><h3>or use your email for registration</h3></span>
+                    <input type="text" id="name" placeholder="Name" style="border: none;"/>
+                    <input type="email" id="signupEmail" placeholder="Email" style="border: none;"/>
+                    <input type="password" id="signupPassword" placeholder="Password" style="border: none;"/>
+                    <button type="submit" class="s11">Sign Up</button>
+                </form>
+            </div>
+            <div class="form-container sign-in-container">
+                <form id="signinForm">
+                    <h1>Sign in</h1>
+                    <div class="social-container">
+                        <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                        <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <span>or use your account</span>
+                    <input id="eemail" type="email" placeholder="Email" style="border: none;"/>
+                    <input id="pass" type="password" placeholder="Password" style="border: none;" />
+                    <a href="#">Forgot your password?</a>
+                    <button type="submit" class="s11">Sign In</button>
+                </form>
+            </div>
+            <div class="overlay-container">
+                <div class="overlay">
+                    <div class="overlay-panel overlay-left">
+                        <h1>Welcome Back!</h1>
+                        <p>To keep connected with us please login with your personal info</p>
+                        <button class="ghost" id="signIn">Sign In</button>
+                    </div>
+                    <div class="overlay-panel overlay-right">
+                        <h1>Hello, Friend!</h1>
+                        <p>Enter your personal details and start your journey with us</p>
+                        <button class="ghost" id="signUp">Sign Up</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // DOM Elements
+        const container = document.getElementById('container');
+        const signUpButton = document.getElementById('signUp');
+        const signInButton = document.getElementById('signIn');
+        const signupForm = document.getElementById('signupForm');
+        const signinForm = document.getElementById('signinForm');
+
+        // Toggle Forms
+        signUpButton.addEventListener('click', () => {
+            container.classList.add("right-panel-active");
+        });
+
+        signInButton.addEventListener('click', () => {
+            container.classList.remove("right-panel-active");
+        });
+
+        // Signup Functionality
+        signupForm.addEventListener('submit', (event) => {
+            event.preventDefault(); // Prevent form submission
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('signupEmail').value;
+            const password = document.getElementById('signupPassword').value;
+
+            if (localStorage.getItem(email)) {
+                alert('User already exists!');
+            } else {
+                const user = { name, email, password };
+                localStorage.setItem(email, JSON.stringify(user));
+                alert('Account created successfully!');
+                container.classList.remove("right-panel-active"); // Switch to login form
+            }
+        });
+
+        // Signin Functionality
+        signinForm.addEventListener('submit', (event) => {
+            event.preventDefault(); // Prevent form submission
+            const email = document.getElementById('eemail').value;
+            const password = document.getElementById('pass').value;
+
+            const storedUser = JSON.parse(localStorage.getItem(email));
+
+            if (storedUser && storedUser.password === password) {
+                window.location.href = "../Iship/home/main.html"; // Adjust path as needed
+            } else {
+                alert('Invalid credentials. Please check your email and password.');
+            }
+        });
+    </script>
+</body>
+</html>
