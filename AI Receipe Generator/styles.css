@@ -3,7 +3,7 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(135deg, #bdb9bc, #748aaf);
+    background: linear-gradient(135deg, #6f7e57, #69df1b);
     color: #333;
     transition: background-color 0.3s ease-in-out;
   }
@@ -11,7 +11,7 @@ body {
   /* Header */
   header {
     text-align: center;
-    background: #3b3a31;
+    background: #218838;
     color: white;
     padding: 40px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
@@ -25,6 +25,7 @@ body {
     font-size: 2.8em;
     letter-spacing: 1px;
     animation: textGlow 1.5s infinite alternate;
+    color: #000000;
   }
   
   /* Main Section */
