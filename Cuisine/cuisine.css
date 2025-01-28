@@ -1,191 +1,194 @@
 /* General Styles */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    color: #333;
-    font-size: 18px; /* Increased font size by 10px */
-    background-image: url("https://img.freepik.com/premium-vector/seamless-pattern-with-veggies-fruits_654192-901.jpg?uid=R153506867&ga=GA1.2.886779939.1721580435&semt=ais_user");
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #333;
+  font-size: 18px; /* Increased font size by 10px */
+  background-image: url("https://img.freepik.com/premium-vector/seamless-pattern-with-veggies-fruits_654192-901.jpg?uid=R153506867&ga=GA1.2.886779939.1721580435&semt=ais_user");
 }
 
 .container {
-    top: 50px;
-    width: 90%;
-    max-width: 900px;
-    margin: auto;
-    padding: 20px;
-    background:transparent;
-    backdrop-filter: blur(15px);
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    position: relative;
+  top: 50px;
+  width: 90%;
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+  background: transparent;
+  backdrop-filter: blur(15px);
+  border-radius: 10px;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+  position: relative;
 }
 
 header {
-    text-align: center;
-    margin-bottom: 20px;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 h1 {
-    font-size: 2.5rem;
-    margin: 0;
-    color: #2c3e50;
+  font-size: 2.5rem;
+  margin: 0;
+  color: #2c3e50;
 }
 
 /* Background Doodle */
 .container::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: url('https://www.transparenttextures.com/patterns/white-sand.png') no-repeat center center;
-    opacity: 0.1;
-    z-index: -1;
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: url("https://www.transparenttextures.com/patterns/white-sand.png")
+    no-repeat center center;
+  opacity: 0.1;
+  z-index: -1;
 }
 
 /* Meal Selector */
 .meal-selector {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
 .meal-selector label {
-    margin-right: 10px;
-    font-size: 1.2rem;
+  margin-right: 10px;
+  font-size: 1.2rem;
 }
 
-.meal-selector select, .meal-selector button {
-    margin: 0 10px;
-    padding: 10px;
-    font-size: 1rem;
-    border-radius: 5px;
-    border: 1px solid #ddd;
+.meal-selector select,
+.meal-selector button {
+  margin: 0 10px;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ddd;
 }
 
 .meal-selector button {
-    background-color: #27ae60;
-    color: white;
-    border: none;
-    cursor: pointer;
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  cursor: pointer;
 }
 
 .meal-selector button:hover {
-    background-color: #1e8449;
+  background-color: #1e8449;
 }
 
 /* Meal Info */
 .meal-info {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 #dishName {
-    font-size: 1.5rem;
-    color: #27ae60;
+  font-size: 1.5rem;
+  color: #27ae60;
 }
 
 #ingredients {
-    list-style-type: none;
-    padding: 0;
+  list-style-type: none;
+  padding: 0;
 }
 
 #ingredients li {
-    font-size: 1.2rem;
-    margin-bottom: 5px;
+  font-size: 1.2rem;
+  margin-bottom: 5px;
 }
 
 #buyLink {
-
-    display: block;
-    margin-top: 10px;
-    font-size: 1.2rem;
+  display: block;
+  margin-top: 10px;
+  font-size: 1.2rem;
 }
 
 #buyLink:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 /* Nutrition Calculator */
 .nutrition-calculator {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .nutrition-calculator h2 {
-    font-size: 1.8rem;
-    margin-bottom: 10px;
-    color: #2c3e50;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  color: #2c3e50;
 }
 
 #nutritionForm {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 #ingredientInputs {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 #ingredientInputs div {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 #ingredientInputs label {
-    font-size: 1.2rem;
-    margin-right: 10px;
+  font-size: 1.2rem;
+  margin-right: 10px;
 }
 
 #ingredientInputs input {
-    padding: 5px;
-    font-size: 1rem;
-    border-radius: 5px;
-    border: 1px solid #ddd;
+  padding: 5px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ddd;
 }
 
 #calculateNutrition {
-    padding: 10px 20px;
-    font-size: 1.2rem;
-    border-radius: 5px;
-    border: none;
-    background-color: #27ae60;
-    color: white;
-    cursor: pointer;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  border: none;
+  background-color: #27ae60;
+  color: white;
+  cursor: pointer;
 }
 
 #calculateNutrition:hover {
-    background-color: #1e8449;
+  background-color: #1e8449;
 }
 
 #nutritionResults {
-    font-size: 1.2rem;
+  font-size: 1.2rem;
 }
 
 #nutritionResults p {
-    margin: 5px 0;
+  margin: 5px 0;
 }
 
 /* Store Locator */
 .store-locator {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 #map {
-    width: 100%;
-    height: 400px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+  width: 100%;
+  height: 400px;
+  border: 1px solid #000000;
+  border-radius: 5px;
 }
 
 /* Responsive Styles */
 @media (max-width: 768px) {
-    .meal-selector {
-        flex-direction: column;
-        align-items: flex-start;
-    }
+  .meal-selector {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 
-    .meal-selector label, .meal-selector select, .meal-selector button {
-        margin: 5px 0;
-    }
+  .meal-selector label,
+  .meal-selector select,
+  .meal-selector button {
+    margin: 5px 0;
+  }
 }

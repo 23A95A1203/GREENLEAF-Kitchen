@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GreenLeaf AI Recipe Generator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>GreenLeaf Kitchen</h1>
+    <p>AI-powered personalized recipes!</p>
+  </header>
+
+  <main>
+    <section id="recipe-generator">
+      <h2>AI Recipe Generator</h2>
+      <form id="recipeForm">
+        <label for="ingredients">Your Ingredients:</label>
+        <input type="text" id="ingredients" placeholder="E.g., tomatoes, spinach, chicken" required>
+
+        <label for="cuisine">Preferred Cuisine:</label>
+        <select id="cuisine">
+          <option value="">Select...</option>
+          <option value="indian">Indian</option>
+          <option value="italian">Italian</option>
+          <option value="mexican">Mexican</option>
+          <option value="chinese">Chinese</option>
+          <option value="mediterranean">Mediterranean</option>
+          <option value="thai">Thai</option>
+        </select>
+        
+
+        <label for="diet">Dietary Preference:</label>
+        <select id="diet">
+          <option value="">Select...</option>
+          <option value="vegan">Vegan</option>
+          <option value="vegetarian">Vegetarian</option>
+          <option value="keto">Keto</option>
+        </select>
+
+        <button type="submit">Generate Recipe</button>
+      </form>
+
+      <div id="recipe-output" class="recipe-card">
+        <h3 id="recipe-name">
+          <span class="icon">🍽️</span> Generated Recipe
+        </h3>
+        <ul id="recipe-steps"></ul>
+      </div>
+      
+      <footer class="footer">
+        <p>&copy; 2025 GreenLeaf Kitchen</p>
+        <div class="social-links">
+          <span>Follow us:</span>
+          <a href="https://instagram.com" target="_blank" class="social-icon">📸</a>
+          <a href="https://facebook.com" target="_blank" class="social-icon">📘</a>
+          <a href="https://twitter.com" target="_blank" class="social-icon">🐦</a>
+        </div>
+      </footer>
+      
+
+  <script src="script.js"></script>
+</body>
+</html>
