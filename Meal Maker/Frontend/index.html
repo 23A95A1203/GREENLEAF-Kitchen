@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greenleaf Kitchen - Meal Planner</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Greenleaf Kitchen - Meal Planner</h1>
+        <label for="meal-date">Select Date:</label>
+        <input type="date" id="meal-date">
+        <div class="week">
+            <div class="day">
+                <h2>Plan Your Meals</h2>
+                <div class="meals">
+                    <div class="meal">
+                        <h3>Breakfast</h3>
+                        <input type="text" class="meal-input" id="breakfast" placeholder="Search meal...">
+                        <button class="search-btn" onclick="searchMeal('breakfast')">🔍</button>
+                    </div>
+                    <div class="meal">
+                        <h3>Lunch</h3>
+                        <input type="text" class="meal-input" id="lunch" placeholder="Search meal...">
+                        <button class="search-btn" onclick="searchMeal('lunch')">🔍</button>
+                    </div>
+                    <div class="meal">
+                        <h3>Dinner</h3>
+                        <input type="text" class="meal-input" id="dinner" placeholder="Search meal...">
+                        <button class="search-btn" onclick="searchMeal('dinner')">🔍</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button id="save">Save Meal Plan</button>
+        <button id="generate-grocery">Search Groceries</button>
+        <div id="ingredient-list"></div>
+    </div>
+    </body>
+    </html>
